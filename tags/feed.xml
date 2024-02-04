@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://joannawu84.github.io/My-Blog/xml/base.min.xml" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Joanna&#39;s Blog</title>
+    <link>https://joannawu84.github.io/My-Blog/tags/</link>
+    <description>Recent content in Tags on Joanna&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link rel="self" href="https://joannawu84.github.io/My-Blog/tags/feed.xml" type="application/rss+xml" />
+    <item>
+      <title>First</title>
+      <link>https://joannawu84.github.io/My-Blog/post/first/</link>
+      <pubDate>Sun, 04 Feb 2024 10:30:03 +0800</pubDate>
+      <guid>https://joannawu84.github.io/My-Blog/post/first/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://joannawu84.github.io/My-Blog/post/milk-v-duo-%E6%90%AD%E5%BB%BA%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%B9%B6%E8%BF%90%E8%A1%8C-hello-world/</link>
+      <guid>https://joannawu84.github.io/My-Blog/post/milk-v-duo-%E6%90%AD%E5%BB%BA%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%B9%B6%E8%BF%90%E8%A1%8C-hello-world/</guid>
+      <description>&lt;h1 id=&#34;milk-v-duo-搭建编译环境并运行-hello-world&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;https://joannawu84.github.io/My-Blog/My-Blog/post/milk-v-duo-%E6%90%AD%E5%BB%BA%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%B9%B6%E8%BF%90%E8%A1%8C-hello-world/#milk-v-duo-%e6%90%ad%e5%bb%ba%e7%bc%96%e8%af%91%e7%8e%af%e5%a2%83%e5%b9%b6%e8%bf%90%e8%a1%8c-hello-world&#34;&gt;Milk-V Duo 搭建编译环境并运行 Hello World&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;准备编译环境&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ubuntu 22.04 LTS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1安装编译依赖的工具&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;https://joannawu84.github.io/My-Blog/My-Blog/post/milk-v-duo-%E6%90%AD%E5%BB%BA%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%B9%B6%E8%BF%90%E8%A1%8C-hello-world/#1%e5%ae%89%e8%a3%85%e7%bc%96%e8%af%91%e4%be%9d%e8%b5%96%e7%9a%84%e5%b7%a5%e5%85%b7&#34;&gt;1.安装编译依赖的工具&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install wget git make&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;2将-duo-examples-仓库克隆到本地&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;https://joannawu84.github.io/My-Blog/My-Blog/post/milk-v-duo-%E6%90%AD%E5%BB%BA%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%B9%B6%E8%BF%90%E8%A1%8C-hello-world/#2%e5%b0%86-duo-examples-%e4%bb%93%e5%ba%93%e5%85%8b%e9%9a%86%e5%88%b0%e6%9c%ac%e5%9c%b0&#34;&gt;2.将 duo-examples 仓库克隆到本地&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/milkv-duo/duo-examples.git&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;3加载编译环境&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;https://joannawu84.github.io/My-Blog/My-Blog/post/milk-v-duo-%E6%90%AD%E5%BB%BA%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%B9%B6%E8%BF%90%E8%A1%8C-hello-world/#3%e5%8a%a0%e8%bd%bd%e7%bc%96%e8%af%91%e7%8e%af%e5%a2%83&#34;&gt;3.加载编译环境&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd duo-examples
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source envsetup.sh&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;下载完会自动解压到 &lt;code&gt;duo-examples&lt;/code&gt; 下，解压后的目录名为 &lt;code&gt;duo-sdk&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;4编译测试&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;https://joannawu84.github.io/My-Blog/My-Blog/post/milk-v-duo-%E6%90%AD%E5%BB%BA%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%B9%B6%E8%BF%90%E8%A1%8C-hello-world/#4%e7%bc%96%e8%af%91%e6%b5%8b%e8%af%95&#34;&gt;4.编译测试&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd hello-world
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;5将编译好的程序-helloworld-传送到-milk-v-duo&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;https://joannawu84.github.io/My-Blog/My-Blog/post/milk-v-duo-%E6%90%AD%E5%BB%BA%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%B9%B6%E8%BF%90%E8%A1%8C-hello-world/#5%e5%b0%86%e7%bc%96%e8%af%91%e5%a5%bd%e7%9a%84%e7%a8%8b%e5%ba%8f-helloworld-%e4%bc%a0%e9%80%81%e5%88%b0-milk-v-duo&#34;&gt;5.将编译好的程序 &lt;code&gt;helloworld&lt;/code&gt; 传送到 Milk-V Duo&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;将编译成功后将生成的 &lt;code&gt;helloworld&lt;/code&gt; 可执行程序通过RNDIS网络传送到 Milk-V Duo设备中&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ scp helloworld root@192.168.42.1:/root/&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;6ssh-milk-v-duo&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;https://joannawu84.github.io/My-Blog/My-Blog/post/milk-v-duo-%E6%90%AD%E5%BB%BA%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%B9%B6%E8%BF%90%E8%A1%8C-hello-world/#6ssh-milk-v-duo&#34;&gt;6.SSH Milk-V Duo&lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;远程链接Milk-V Duo (默认密码：milkv)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh root@192.168.42.1&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;在ssh或者串口登陆的终端中运行编译好的程序，会打印 &lt;code&gt;Hello, World!&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[root@milkv]~# ./helloworld
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Hello, World!&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+    </item>
+  </channel>
+</rss>
